@@ -11,13 +11,14 @@ const textLinks: { label: string; href: string }[] = [
 
 /** Icon links to social media — edit these with links to your profiles! */
 const iconLinks: { label: string; href: string; icon: IconProps["icon"] }[] = [
-  { label: "Twitter", href: "https://twitter.com/me", icon: "twitter-logo" },
   { label: "GitHub", href: "https://github.com/a160v", icon: "github-logo" },
   {
     label: "Linkedin",
     href: "https://www.linkedin.com/in/aleksvan/",
     icon: "linkedin-logo",
   },
+  { label: "Twitter", href: "https://twitter.com/aleksconks", icon: "twitter-logo" },
+  { label: "Substack", href: "https://aleks16.substack.com", icon: "pen" },
 ];
 ---
 
@@ -25,7 +26,7 @@ const iconLinks: { label: string; href: string; icon: IconProps["icon"] }[] = [
   <div class="menu-header">
     <a href="/" class="site-title">
       <Icon
-        icon="code"
+        icon="lighthouse"
         color="var(--accent-regular)"
         size="1.6em"
         gradient
