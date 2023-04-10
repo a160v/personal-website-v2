@@ -1,11 +1,11 @@
 ---
 title: "Movienight, a Meetup for movie enthusiasts"
-publishDate: 2019-10-02 00:00:00
-img: /assets/movienight.jpg
-img_alt: Soft pink and baby blue water ripples together in a subtle texture.
+publishDate: 2023-04-03 00:00:00
+img: /assets/movienight.webp
+img_alt: Screenshot of Movienight homepage
 description: |
-  We developed brand positioning and design assets for the launch
-  of a new colored water product.
+  We developed a platform where movie enthusiasts can meet and enjoy
+  online streaming platforms content together.
 tags:
   - Full stack
   - Dev

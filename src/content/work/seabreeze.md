@@ -1,7 +1,7 @@
 ---
 title: "Seabreeze, an Airbnb clone"
 publishDate: 2023-04-02 00:00:00
-img: /assets/seabreeze-index.jpg
+img: /assets/seabreeze.webp
 img_alt: Screenshot of Seabreeze homepage
 description: |
   Aye aye! Here it is an Airbnb clone to rent and find boats.
@@ -10,6 +10,7 @@ tags:
   - Dev
   - Wireframe
 ---
+
 <i>Tell me and I forget. Teach me and I remember. Involve me and I learn.</i>
 
 ##### Aribnb clone, from wireframing to shipping on Github
