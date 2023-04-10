@@ -5,17 +5,11 @@ const currentYear = new Date().getFullYear();
 
 <footer>
   <div class="group">
-    <p>
-      Inspired by <a href="https://astro.build/">Astro</a>
-      <Icon icon="rocket-launch" size="1.2em" />
-    </p>
     <p>&copy; {currentYear} Aleks Vangjelofski</p>
   </div>
-  <p class="socials">
-    <a href="https://twitter.com/me" target="_blank"> Twitter</a>
-    <a href="https://github.com/a160v" target="_blank"> GitHub</a>
-    <a href="https://www.linkedin.com/in/aleksvan/" target="_blank"> Linkedin</a>
-  </p>
+  <div class="credits">
+    <a href="/credits/">Credits</a>
+  </div>
 </footer>
 <style>
   footer {
@@ -67,7 +61,7 @@ const currentYear = new Date().getFullYear();
       flex-wrap: wrap;
     }
 
-    .socials {
+    .credits {
       justify-content: flex-end;
     }
   }

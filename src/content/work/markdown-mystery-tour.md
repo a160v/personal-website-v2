@@ -1,35 +1,36 @@
 ---
-title: Markdown Mystery Tour
-publishDate: 2020-03-02 00:00:00
-img: /assets/stock-1.jpg
-img_alt: Iridescent ripples of a bright blue and pink liquid
+title: "Seabreeze, an Airbnb clone"
+publishDate: 2023-04-02 00:00:00
+img: /assets/seabreeze-index.jpg
+img_alt: Screenshot of Seabreeze homepage
 description: |
-  We designed a whodunnit-style game to introduce Markdown formatting. Suspense — suspicion — syntax!
+  Aye aye! Here it is an Airbnb clone to rent and find boats.
 tags:
   - Design
   - Dev
-  - User Testing
+  - "1"
 ---
-
-## Level-two heading
 
 > Tell me and I forget. Teach me and I remember. Involve me and I learn.
 
-Lorem ipsum dolor sit amet, <a href="https://astro.build/">Astro</a> makes people happy. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Proin nibh nisl condimentum id venenatis a condimentum vitae. Dapibus ultrices in iaculis nunc. Arcu odio ut sem nulla pharetra diam sit amet. Diam quis enim lobortis scelerisque fermentum dui faucibus in ornare.
+#### Aribnb clone, from wireframe to shipping on Github
 
-Arcu dui vivamus arcu felis bibendum ut tristique et egestas. Eget gravida cum sociis natoque penatibus. Cras fermentum odio eu feugiat pretium nibh. Proin nibh nisl condimentum id venenatis. Porta nibh venenatis cras sed felis eget velit. Id diam vel quam elementum pulvinar etiam non.
+After 6 weeks of intensive bootcamp, our team of four gathered for a week to design, build and deploy an Airbnb clone.
+Two components of the team started with a high level wireframe to sketch in our mind and on Figma the user flow.
+The other took care of setting up the repo on Github and Heroku, including the automatic deploy from Github master repo.
+Then we discussed on the wireframes: perfectionism and newly acquired skills don't make life easy, but we managed to overcome
+this challenge and move forward with the design.
+The <a href="https://uikit.lewagon.com/">UI kit from Le Wagon</a> saved us many hours, while showing us how to get started with UI best practices.
 
-### Level-three heading
+#### Seabreeze, from localhost:3000 to the internet
 
-Ultrices tincidunt arcu non sodales neque sodales ut. Sed enim ut sem viverra aliquet eget sit amet. Lacus luctus accumsan tortor posuere ac ut consequat semper viverra. Viverra accumsan in nisl nisi scelerisque eu ultrices. In massa tempor nec feugiat nisl pretium fusce.
+Despite a bumpy start and certain code rework, especially on the homepage and boat page, we solved all conflicts on the master branch
+and deployed on Heroku. Heroku friendliness and ease of use through CLI saved us a lot of pain that could have been caused by, for example, AWS or GCP.
 
-### Level-three heading
+#### Technology
 
-Sed pulvinar porttitor mi in ultricies. Etiam non dolor gravida eros pulvinar pellentesque et dictum ex. Proin eu ornare ligula, sed condimentum dui. Vivamus tincidunt tellus mi, sed semper ipsum pharetra a. Suspendisse sollicitudin at sapien nec volutpat. Etiam justo urna, laoreet ac lacus sed, ultricies facilisis dolor. Integer posuere, metus vel viverra gravida, risus elit ornare magna, id feugiat erat risus ullamcorper libero. Proin vitae diam auctor, laoreet lorem vitae, varius tellus.
+- Ruby on Rails 7
+- Vanilla JS
+- Heroku
 
-Aenean pretium purus augue, ut bibendum erat convallis quis. Cras condimentum quis velit ac mollis. Suspendisse non purus fringilla, venenatis nisl porta, finibus odio. Curabitur aliquet metus faucibus libero interdum euismod. Morbi sed magna nisl. Morbi odio nibh, facilisis vel sapien eu, tempus tincidunt erat. Nullam erat velit, sagittis at purus quis, tristique scelerisque tortor. Pellentesque lacinia tortor id est aliquam viverra. Vestibulum et diam ac ipsum mollis fringilla.
-
-#### Level-four heading
-
-- We noted this
-- And also this other point
+Find the project on <a href="https://github.com/a160v/seabreeze" target="_blank">Github</a>.
