@@ -1,7 +1,7 @@
 ---
 import { getCollection } from "astro:content";
 
-// Layout import — provides basic page elements: <head>, <nav>, <footer> etc.
+// Layout import — provides basic page elements: <head>, <nav>, etc.
 import BaseLayout from "../layouts/BaseLayout.astro";
 
 // Component Imports
@@ -31,7 +31,7 @@ const projects = (await getCollection("work"))
       <header class="hero">
         <Hero
           title="Hello, you"
-          tagline="I am a Creative Developer based in Zurich."
+          tagline="I am Aleks, a Creative Web Developer"
           align="start"
         >
           <div class="roles">

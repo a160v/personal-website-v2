@@ -1,40 +1,27 @@
 ---
-import Hero from "../components/Hero.astro";
 import BaseLayout from "../layouts/BaseLayout.astro";
+// import ContactCTA from "../components/ContactCTA.astro";
 ---
-
 <BaseLayout title="Credits" description="Website credits">
-  <Hero
-    title="Credits page"
-    tagline="Thanks to everyone who made it possible for this website to come to light"
-  />
-  <div class="stack gap-20">
     <main class="wrapper credits">
-      <div class="content">
-        <ul>
-          <li>
-            <a href="astro.build">Astro for framework and theme</a>
-          </li>
-          <li>
-            <a href=""></a>
-          </li>
-        </ul>
-      </div>
+      <section>
+        <h2 class="section-title">Thank you</h2>
+        <div class="content">
+          <p><a href="astro.build">Astro for framework and theme</a></p>
+          <p><a href="https://phosphoricons.com/">Phosphor Icons for icons</a></p>
+          <p>
+            <a href="https://openai.com/blog/chatgpt">ChatGPT for assistance</a>
+          </p>
+        </div>
+      </section>
     </main>
-  </div>
-</BaseLayout>
+  </BaseLayout>
 
 <style>
   .credits {
     display: flex;
     flex-direction: column;
     gap: 3.5rem;
-  }
-
-  img {
-    margin-top: 1.5rem;
-    border-radius: 1.5rem;
-    box-shadow: var(--shadow-md);
   }
 
   section {
@@ -52,11 +39,12 @@ import BaseLayout from "../layouts/BaseLayout.astro";
 
   .content {
     grid-column: 2 / 4;
+    color: var(--gray-200);
   }
-
-  .content :global(a) {
+  .content a {
     text-decoration: 1px solid underline transparent;
     text-underline-offset: 0.25em;
+    color: var(--gray-200);
     transition: text-decoration-color var(--theme-transition);
   }
 
