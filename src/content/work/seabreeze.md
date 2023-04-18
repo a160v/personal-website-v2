@@ -11,6 +11,8 @@ tags:
   - Wireframe
 ---
 
+<div style="text-align: justify">
+
 <i>Tell me and I forget. Teach me and I remember. Involve me and I learn.</i>
 
 ##### Aribnb clone, from wireframing to shipping on Github
@@ -32,7 +34,13 @@ Finally we worked on the other features.
 
 - Ruby on Rails 7
 - Vanilla JS
+- CSS
 - Heroku
 - Figma
 
-Find the project on <a href="https://github.com/a160v/seabreeze" target="_blank">Github</a>.
+##### External links
+
+<a href="https://seabreeze.herokuapp.com/" target="_blank">Live project website</a> (whenever available).<br>
+<a href="https://github.com/a160v/seabreeze" target="_blank">Github page</a> of the project.
+
+</div>
