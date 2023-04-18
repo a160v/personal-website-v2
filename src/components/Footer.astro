@@ -1,68 +1,115 @@
 ---
-import Icon from "./Icon.astro";
+import Icon, { Props as IconProps } from "./Icon.astro";
 const currentYear = new Date().getFullYear();
+/** Icon links to social media — edit these with links to your profiles! */
+const iconLinks: { label: string; href: string; icon: IconProps["icon"] }[] = [
+  { label: "GitHub", href: "https://github.com/a160v", icon: "github-logo" },
+  { label: "Linkedin", href: "https://www.linkedin.com/in/aleksvan/", icon: "linkedin-logo",},
+  { label: "Twitter", href: "https://twitter.com/aleksconks", icon: "twitter-logo" },
+  { label: "Substack", href: "https://aleks16.substack.com", icon: "pen" },
+];
 ---
-
+<!-- Page content below -->
 <footer>
-  <div class="group">
+  <div class="footer-element">
     <p>&copy; {currentYear} Aleks Vangjelofski</p>
   </div>
-  <div class="credits">
-    <a href="/credits/">Credits</a>
-  </div>
-</footer>
+  <div class="socials">
+    {
+      iconLinks.map(({ href, icon, label }) => (
+        <a href={href} class="social" target="_blank">
+          <Icon icon={icon}/>
+          </a>
+          ))
+        }
+    </div>
+    <div class="footer-element">
+      <a href="/credits/">Credits</a>
+    </div>
+  </footer>
+<!-- Page content ends here -->
+
+<!-- Styling starts here -->
 <style>
   footer {
     display: flex;
     flex-direction: column;
     gap: 3rem;
     margin-top: auto;
-    padding: 3rem 2rem 3rem;
-    text-align: center;
-    color: var(--gray-400);
-    font-size: var(--text-sm);
-  }
+    content: align-self: start;
+    color: var(--gray-300);
+    font-size: var(--text-md);
+    gap: 0.75rem;
+    padding: 1.5rem 2rem 1.5rem 1.5rem;
+    border-radius: 0 0 0.75rem 0.75rem;
+    background-color: var(--gray-999_40);
 
-  footer a {
-    color: var(--gray-400);
-    text-decoration: 1px solid underline transparent;
-    text-underline-offset: 0.25em;
-    transition: text-decoration-color var(--theme-transition);
   }
-
-  footer a:hover,
-  footer a:focus {
-    text-decoration-color: currentColor;
-  }
-
-  .group {
+    footer a {
+      text-decoration: 1px solid underline transparent;
+      text-underline-offset: 0.25em;
+      color: var(--gray-300);
+      transition: text-decoration-color var(--theme-transition);
+    }
+    footer :global(a:hover),
+    footer :global(a:focus) {
+      text-decoration-color: currentColor;
+    }
+  /* Social icons styling */
+  .socials {
+    --icon-size: var(--text-xl);
+    --icon-padding: 0.5rem;
     display: flex;
-    flex-direction: column;
-    gap: 0.5rem;
+    flex-wrap: wrap;
+    gap: 0.625rem;
+    font-size: var(--icon-size);
   }
 
+  .social {
+    display: flex;
+    padding: var(--icon-padding);
+    transition: color var(--theme-transition);
+      padding: 0.5rem 1rem;
+      border-radius: 999rem;
+      transition: color var(--theme-transition),
+        background-color var(--theme-transition);
+  }
+  .social:hover,.social:focus {
+      color: var(--gray-100);
+      background-color: var(--accent-subtle-overlay);
+  }
+
+  @media (min-width: 60em) {
+    .socials {
+      display: flex;
+      justify-content: flex-end;
+      gap: 0;
+    }
+  }
+  /* Responsive styling starts */
+  @media (min-width: 60em) {
   .socials {
     display: flex;
-    justify-content: center;
-    gap: 1rem;
-    flex-wrap: wrap;
+    justify-content: flex-end;
+    gap: 0;
   }
-
+}
   @media (min-width: 50em) {
     footer {
       flex-direction: row;
       justify-content: space-between;
-      padding: 2.5rem 5rem;
     }
 
-    .group {
-      flex-direction: row;
+    .footer-element {
       gap: 1rem;
       flex-wrap: wrap;
     }
 
     .credits {
       justify-content: flex-end;
+      gap: 1rem;
+      flex-wrap: wrap;
     }
   }
-</style>
+  </style>
+<!-- Styling ends here -->

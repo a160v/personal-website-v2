@@ -1,7 +1,7 @@
 ---
 import { getCollection } from "astro:content";
 
-// Layout import — provides basic page elements: <head>, <nav>, <footer> etc.
+// Layout import — provides basic page elements: <head>, <nav>, etc.
 import BaseLayout from "../layouts/BaseLayout.astro";
 
 // Component Imports
@@ -30,16 +30,14 @@ const projects = (await getCollection("work"))
     <div class="wrapper stack gap-8 lg:gap-20">
       <header class="hero">
         <Hero
-          title="Hello, world"
-          tagline="I am a Creative Developer based in Zurich."
+          title="Hello, you"
+          tagline="I am Aleks, a Creative Web Developer"
           align="start"
         >
           <div class="roles">
-            <Pill><Icon icon="code" size="1.33em" /> Developer</Pill>
-            <Pill>
-              <Icon icon="microphone-stage" size="1.33em" /> Product Manager
-            </Pill>
-            <Pill><Icon icon="pen" size="1.33em" /> Writer</Pill>
+            <Pill><Icon icon="lightbulb" size="1.33em" /> Thinker</Pill>
+            <Pill><Icon icon="code" size="1.33em" /> Software Developer</Pill>
+            <Pill><Icon icon="person-arms-spread" size="1.33em" /> Product Manager</Pill>
           </div>
         </Hero>
 
