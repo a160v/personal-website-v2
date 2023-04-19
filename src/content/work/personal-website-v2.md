@@ -6,10 +6,14 @@ img_alt: Screenshot of Aleks personal website v2 homepage
 description: |
   Complete rework of v1, from scratch.
 tags:
-  - Dev
   - Astro
   - Javascript
+  - Solo
+  - Personal Website
 ---
+
+<div style="text-align: justify">
+
 <i>A journey of a thousand miles begins with a single step.</i> Laozi
 
 ##### My second personal website
@@ -21,5 +25,12 @@ Astro is a static site builder that enables the creation of fast and modern webs
 
 - Astro
 - Javscript
+- CSS
+- Github Pages
 
-\> Find the project on <a href="https://github.com/a160v/personal-website-v1" target="_blank">Github</a>.
+##### External links
+
+<a href="https://aleks.digital/" target="_blank">Live website</a> (you are visiting it 😉).<br>
+<a href="https://github.com/a160v/personal-website-v2" target="_blank">Github page</a> of the project.
+
+</div>

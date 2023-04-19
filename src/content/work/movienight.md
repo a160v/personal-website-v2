@@ -8,11 +8,12 @@ description: |
   online streaming platforms content together.
 tags:
   - Full stack
-  - Dev
-  - Movies
+  - Teamwork
   - API
   - Design
 ---
+
+<div style="text-align: justify">
 
 <i>The cinema has no boundary, it is a ribbon of dreams.</i> Orson Welles
 
@@ -33,8 +34,14 @@ Overall, MovieTime is a user-friendly and personalized movie meetup platform for
 
 - Ruby on Rails 7
 - Vanilla JS
+- CSS
 - Heroku
 - Figma
 - Jira
 
-\> Find the project on <a href="https://github.com/nicoloadamo/movietime" target="_blank">Github</a>.
+##### External links
+
+<a href="https://www.movienight.events/" target="_blank">Live website</a> (whenever available).<br>
+<a href="https://github.com/nicoloadamo/movietime" target="_blank">Github page</a> of the project.
+
+</div>

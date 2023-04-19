@@ -19,7 +19,7 @@
   --accent-light: #002a77;
   --accent-regular: #120a8f;
   --accent-dark: #2000b1;
-  --accent-overlay: hsla(235, 83%, 55%, 0.33);
+  --accent-overlay: hsla(235, 83%, 55%, 0.66);
   --accent-subtle-overlay: var(--accent-overlay);
   --accent-text-over: var(--gray-999);
 
@@ -200,7 +200,6 @@ h5 {
   padding: 0;
   margin: -1px;
   overflow: hidden;
-  clip: rect(0, 0, 0, 0);
   white-space: nowrap;
   border-width: 0;
 }

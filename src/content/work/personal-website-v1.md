@@ -7,19 +7,27 @@ description: |
   My first personal website is minimalist landing page.
 tags:
   - Full stack
-  - Dev
-  - Github pages
+  - Solo
+  - Personal website
 ---
+
+<div style="text-align: justify">
 
 <i>A journey of a thousand miles begins with a single step.</i> Laozi
 
 ##### My first personal website
 
-I worked on this project only with HTML and CSS.
+This is the first website I created. I worked on this project only with HTML and CSS and it was hosted on GitHub.
 
 ##### Technology
 
 - HTML
 - CSS
+- Github Pages
 
-\> Find the project on <a href="https://github.com/a160v/personal-website-v1" target="_blank">Github</a>.
+##### External links
+
+<a href="https://aleksv.me/" target="_blank">Live website</a> (whenever available).<br>
+<a href="https://github.com/a160v/personal-website-v1" target="_blank">Github page</a> of the project.
+
+</div>
