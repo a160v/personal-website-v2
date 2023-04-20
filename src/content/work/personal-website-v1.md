@@ -1,14 +1,10 @@
 ---
 title: "Personal website v1"
 publishDate: 2023-04-01 00:00:00
-img: /assets/personal-website-v1.png
+img: /assets/personal-website-v1.webp
 img_alt: Screenshot of Aleks personal website v1 homepage
 description: |
   My first personal website is minimalist landing page.
-tags:
-  - Full stack
-  - Solo
-  - Personal website
 ---
 
 <div style="text-align: justify">

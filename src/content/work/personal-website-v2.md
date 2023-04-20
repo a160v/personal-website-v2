@@ -5,11 +5,6 @@ img: /assets/personal-website-v2.webp
 img_alt: Screenshot of Aleks personal website v2 homepage
 description: |
   Complete rework of v1, from scratch.
-tags:
-  - Astro
-  - Javascript
-  - Solo
-  - Personal Website
 ---
 
 <div style="text-align: justify">

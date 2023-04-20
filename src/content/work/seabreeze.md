@@ -5,10 +5,6 @@ img: /assets/seabreeze.webp
 img_alt: Screenshot of Seabreeze homepage
 description: |
   Aye aye! Here it is an Airbnb clone to rent and find boats.
-tags:
-  - Full stack
-  - Dev
-  - Wireframe
 ---
 
 <div style="text-align: justify">

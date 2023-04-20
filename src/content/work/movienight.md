@@ -6,11 +6,6 @@ img_alt: Screenshot of Movienight homepage
 description: |
   We developed a platform where movie enthusiasts can meet and enjoy
   online streaming platforms content together.
-tags:
-  - Full stack
-  - Teamwork
-  - API
-  - Design
 ---
 
 <div style="text-align: justify">

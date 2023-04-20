@@ -37,15 +37,16 @@ const projects = (await getCollection("work"))
           <div class="roles">
             <Pill><Icon icon="lightbulb" size="1.33em" /> Thinker</Pill>
             <Pill><Icon icon="code" size="1.33em" /> Software Developer</Pill>
-            <Pill><Icon icon="person-arms-spread" size="1.33em" /> Product Manager</Pill>
+            <Pill>
+              <Icon icon="person-arms-spread" size="1.33em" /> Product Manager
+            </Pill>
           </div>
         </Hero>
-
         <img
           alt="Aleks Vangjelofski smiling in a jacket in black and white"
           width="480"
           height="620"
-          src="/assets/portrait.jpg"
+          src="/assets/portrait.webp"
         />
       </header>
 
@@ -78,29 +79,6 @@ const projects = (await getCollection("work"))
           </CallToAction>
         </div>
       </section>
-
-      <!-- Commenting the section below for future implementation -->
-      <!-- <section class="section with-background bg-variant">
-				<header class="section-header stack gap-2 lg:gap-4">
-					<h3>Mentions</h3>
-					<p>
-						I have been fortunate enough to recieve praise for my work in several publications. Take
-						a look below to learn more.
-					</p>
-				</header>
-
-				<div class="gallery">
-					<Grid variant="small">
-						{
-							['Medium', 'BuzzFeed', 'The Next Web', 'awwwards.', 'TechCrunch'].map((brand) => (
-								<li class="mention-card">
-									<p>{brand}</p>
-								</li>
-							))
-						}
-					</Grid>
-				</div>
-			</section> -->
     </main>
 
     <ContactCTA />
