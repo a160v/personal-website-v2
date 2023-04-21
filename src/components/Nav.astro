@@ -52,9 +52,10 @@ const textLinks: { label: string; href: string }[] = [
         ))
       }
     </ul>
-
-    <div class="theme-toggle">
-      <ThemeToggle />
+    <div class="menu-theme-toggler">
+      <div class="theme-toggle">
+        <ThemeToggle />
+      </div>
     </div>
   </div>
 </nav>
@@ -181,7 +182,6 @@ const textLinks: { label: string; href: string }[] = [
   .theme-toggle {
     display: flex;
     justify-content: flex-end;
-    height: calc(var(--icon-size) + 2 * var(--icon-padding));
   }
 
   @media (min-width: 50em) {
@@ -244,9 +244,27 @@ const textLinks: { label: string; href: string }[] = [
     }
   }
 
+  .menu-theme-toggler {
+		--icon-size: var(--text-xl);
+		--icon-padding: 0.5rem;
+
+		display: flex;
+    justify-content: flex-end;
+		/* gap: 0.75rem; */
+		padding: 1rem;
+		border-radius: 0 0 0.75rem 0.75rem;
+	}
+
   @media (forced-colors: active) {
     .link.active {
       color: SelectedItem;
+    }
+  }
+
+  @media (max-width: 50em) {
+    .menu-theme-toggler{
+    background-color: var(--gray-999);
+    box-shadow: var(--shadow-lg);
     }
   }
 </style>

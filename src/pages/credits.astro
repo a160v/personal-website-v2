@@ -5,13 +5,19 @@ import BaseLayout from "../layouts/BaseLayout.astro";
 <BaseLayout title="Credits" description="Website credits">
     <main class="wrapper credits">
       <section>
-        <h2 class="section-title">Thank you</h2>
+        <h1 class="section-title">Thanks</h1>
         <div class="content">
           <p><b>Everyone who shared their feedback and support</b></p>
           <p><a href="astro.build">Astro for framework and theme</a></p>
           <p><a href="https://phosphoricons.com/">Phosphor Icons for the icons</a></p>
           <p><a href="https://openai.com/blog/chatgpt">ChatGPT for assistance</a></p>
           <p><a href="https://www.overleaf.com/latex/templates/altacv-template/trgqjpwnmtgv">AltaCV for CV template</a></p>
+        </div>
+          <div id="th-container">
+            <div id="th-emoji">
+              <h1>🙇‍♂️</h1>
+            </div>
+          </div>
         </div>
       </section>
     </main>
@@ -33,7 +39,7 @@ import BaseLayout from "../layouts/BaseLayout.astro";
 
   .section-title {
     grid-column-start: 1;
-    font-size: var(--text-xl);
+    /* font-size: var(--text-xl); */
     color: var(--gray-0);
   }
 
@@ -53,6 +59,10 @@ import BaseLayout from "../layouts/BaseLayout.astro";
     text-decoration-color: currentColor;
   }
 
+  #th-container {
+    display: none;
+  }
+
   @media (min-width: 50em) {
     .credits {
       display: grid;
@@ -68,4 +78,17 @@ import BaseLayout from "../layouts/BaseLayout.astro";
       font-size: var(--text-lg);
     }
   }
+  @media (max-width:50em) {
+    #th-container {
+      display: table;
+      width: 100%;
+      height: 35vh;
+      text-align: center;
+    }
+    #th-emoji {
+      display: table-cell;
+      vertical-align: middle;
+    }
+  }
+
 </style>
