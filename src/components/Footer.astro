@@ -4,29 +4,30 @@ const currentYear = new Date().getFullYear();
 /** Icon links to social media — edit these with links to your profiles! */
 const iconLinks: { label: string; href: string; icon: IconProps["icon"] }[] = [
   { label: "GitHub", href: "https://github.com/a160v", icon: "github-logo" },
-  { label: "Linkedin", href: "https://www.linkedin.com/in/aleksvan/", icon: "linkedin-logo",},
+  { label: "Linkedin", href: "https://www.linkedin.com/in/aleksvan/", icon: "linkedin-logo" },
   { label: "Download CV", href: "../assets/CV_Aleks_Vangjelofski_Web_Developer_compressed.pdf", icon: "cv" },
   { label: "Substack", href: "https://aleks16.substack.com", icon: "pen" },
 ];
 ---
+
 <!-- Page content below -->
 <footer>
   <div class="footer-element">
-    <p>&copy; {currentYear} Aleks Vangjelofski</p>
+    <span><a href="/about/">Built with ❤️‍🔥 by Aleks</a></span>
   </div>
   <div class="socials">
     {
       iconLinks.map(({ href, icon, label }) => (
         <a href={href} class="social" target="_blank">
-          <Icon icon={icon}/>
-          </a>
-          ))
-        }
-    </div>
-    <div class="footer-element">
-      <a href="/credits/">Credits</a>
-    </div>
-  </footer>
+          <Icon icon={icon} />
+        </a>
+      ))
+    }
+  </div>
+  <div class="footer-element">
+    <span><a href="/credits/">Credits  &copy; {currentYear}</a></span>
+  </div>
+</footer>
 <!-- Page content ends here -->
 
 <!-- Styling starts here -->
@@ -36,25 +37,24 @@ const iconLinks: { label: string; href: string; icon: IconProps["icon"] }[] = [
     flex-direction: column;
     gap: 3rem;
     margin-top: auto;
-    content: align-self: start;
+    text-align: center;
     color: var(--gray-300);
     font-size: var(--text-md);
     gap: 0.75rem;
-    padding: 1.5rem 2rem 1.5rem 1.5rem;
+    padding: 1.5rem;
     border-radius: 0 0 0.75rem 0.75rem;
     background-color: var(--gray-999_40);
-
   }
-    footer a {
-      text-decoration: 1px solid underline transparent;
-      text-underline-offset: 0.25em;
-      color: var(--gray-300);
-      transition: text-decoration-color var(--theme-transition);
-    }
-    footer :global(a:hover),
-    footer :global(a:focus) {
-      text-decoration-color: currentColor;
-    }
+  footer a {
+    text-decoration: 1px solid underline transparent;
+    text-underline-offset: 0.25em;
+    color: var(--gray-300);
+    transition: text-decoration-color var(--theme-transition);
+  }
+  footer :global(a:hover),
+  footer :global(a:focus) {
+    text-decoration-color: currentColor;
+  }
   /* Social icons styling */
   .socials {
     --icon-size: var(--text-xl);
@@ -63,20 +63,22 @@ const iconLinks: { label: string; href: string; icon: IconProps["icon"] }[] = [
     flex-wrap: wrap;
     gap: 0.625rem;
     font-size: var(--icon-size);
+    justify-content: center;
   }
 
   .social {
     display: flex;
     padding: var(--icon-padding);
     transition: color var(--theme-transition);
-      padding: 0.5rem 1rem;
-      border-radius: 999rem;
-      transition: color var(--theme-transition),
-        background-color var(--theme-transition);
+    padding: 0.5rem 1rem;
+    border-radius: 999rem;
+    transition: color var(--theme-transition),
+      background-color var(--theme-transition);
   }
-  .social:hover,.social:focus {
-      color: var(--gray-100);
-      background-color: var(--accent-subtle-overlay);
+  .social:hover,
+  .social:focus {
+    color: var(--gray-100);
+    background-color: var(--accent-subtle-overlay);
   }
 
   @media (min-width: 60em) {
@@ -88,12 +90,12 @@ const iconLinks: { label: string; href: string; icon: IconProps["icon"] }[] = [
   }
   /* Responsive styling starts */
   @media (min-width: 60em) {
-  .socials {
-    display: flex;
-    justify-content: flex-end;
-    gap: 0;
+    .socials {
+      display: flex;
+      justify-content: flex-end;
+      gap: 0;
+    }
   }
-}
   @media (min-width: 50em) {
     footer {
       flex-direction: row;
@@ -111,5 +113,5 @@ const iconLinks: { label: string; href: string; icon: IconProps["icon"] }[] = [
       flex-wrap: wrap;
     }
   }
-  </style>
+</style>
 <!-- Styling ends here -->
